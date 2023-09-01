@@ -2,6 +2,12 @@ app-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #141D2F;
     padding: 37px 100px 37px 100px;
 }
 
