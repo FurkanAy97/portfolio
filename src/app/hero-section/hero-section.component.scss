@@ -9,7 +9,7 @@
 .hero-portrait{
     width: 700px;
     position: absolute;
-    top: 150px;
+    top: 250px;
     left: 50px;
 }
 
@@ -77,16 +77,22 @@
 
 .scroll-down{
     position: absolute;
-    right: 60px;
+    right: 40px;
     bottom: 40px;
     transform: rotate(90deg);
     font-size: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all 155ms ease-in-out;
 
     img{
         transform: rotate(270deg);
         margin-left: 8px;
+    }
+
+    &:hover{
+        color: #00bee8;
     }
 }

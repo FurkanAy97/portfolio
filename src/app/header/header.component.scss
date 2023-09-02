@@ -14,10 +14,29 @@
     margin-left: 29px;
     font-size: 23px;
     cursor: pointer;
+    position: relative;
+    text-decoration: none; 
+    color: white;
     transition: color 155ms ease-in-out;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px; 
+      bottom: -2px; 
+      background-color: #00bee8; 
+      transition: width 155ms ease-in-out; 
+    }
 
     &:hover {
       color: #00bee8;
+      &:before {
+        width: 100%;
+      }
     }
   }
 }
+
+
+

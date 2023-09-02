@@ -1,0 +1,57 @@
+.about-me-text {
+  width: 471px;
+
+  h1 {
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+.subtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  width: 430px;
+
+  img {
+    width: 50px;
+  }
+}
+
+.about-me-portrait {
+  z-index: 4;
+  position: relative;
+}
+
+.portrait-container {
+  border: 4px solid #00bee8;
+  border-radius: 100%;
+  width: 453px;
+  height: 453px;
+  margin-right: 150px;
+  background-image: url("../../assets/img/hero-portrait.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.about-me-vector {
+  /* LINE 7 */
+
+  position: absolute;
+  width: 245px;
+  height: 0px;
+  right: 0px;
+  top: 280px;
+  z-index: 0;
+  /* Style 1/style 1 b -blues/blues 2 */
+  border: 3px solid #00bee8;
+}
+
+.about-me-fog {
+  position: absolute;
+  right: -400px;
+  rotate: 354deg;
+  top: -330px;
+
+}

@@ -1,0 +1,28 @@
+.vector-line {
+  width: 100px;
+  height: 0px;
+
+  /* Style 1/style 1 b -blues/blues 1 */
+  border:  solid #4b47ff;
+  border-radius: 0 4px 4px 0;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.email{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.social-icon{
+    width: 30px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.4);
+    }
+}
