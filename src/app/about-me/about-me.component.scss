@@ -12,10 +12,13 @@
   align-items: center;
   justify-content: center;
   gap: 35px;
-  width: 430px;
 
   img {
     width: 50px;
+    transition: all 155ms ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -53,5 +56,10 @@
   right: -400px;
   rotate: 354deg;
   top: -330px;
+}
 
+@media (min-width: 2000px) {
+  .about-me-text {
+    width: 650px;
+  }
 }

@@ -6,7 +6,7 @@ app-header{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     background-color: #141D2F;
     padding: 37px 100px 37px 100px;
 }
@@ -34,5 +34,14 @@ app-about-me{
     justify-content: space-between;
     align-items: center;
     margin-top: 130px;
+    padding: 0 100px;
+}
+
+app-my-skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 320px;
     padding: 0 100px;
 }
