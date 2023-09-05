@@ -1,0 +1,43 @@
+.text-content-container {
+  width: 513px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-titles {
+  width: 100%;
+  height: 42.82px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+
+  color: #4b47ff;
+}
+
+.project-stack {
+  width: 100%;
+  height: 28px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 120%;
+
+  color: #00bee8;
+
+}
+
+app-project-buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 86px;
+  margin-top: 35px;
+}

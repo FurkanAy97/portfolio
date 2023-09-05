@@ -8,6 +8,10 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
+import { PortfolioHeaderComponent } from './portfolio-header/portfolio-header.component';
+import { ProjectComponentComponent } from './project-component/project-component.component';
+import { ProjectTextComponent } from './project-text/project-text.component';
+import { ProjectButtonsComponent } from './project-buttons/project-buttons.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,14 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
     HeroSectionComponent,
     SocialLinksComponent,
     AboutMeComponent,
-    MySkillsComponent
+    MySkillsComponent,
+    PortfolioHeaderComponent,
+    ProjectComponentComponent,
+    ProjectTextComponent,
+    ProjectButtonsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
