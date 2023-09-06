@@ -12,6 +12,7 @@ import { PortfolioHeaderComponent } from './portfolio-header/portfolio-header.co
 import { ProjectComponentComponent } from './project-component/project-component.component';
 import { ProjectTextComponent } from './project-text/project-text.component';
 import { ProjectButtonsComponent } from './project-buttons/project-buttons.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ProjectButtonsComponent } from './project-buttons/project-buttons.compo
     ProjectComponentComponent,
     ProjectTextComponent,
     ProjectButtonsComponent,
+    ContactSectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
