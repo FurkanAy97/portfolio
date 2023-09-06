@@ -3,4 +3,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
+    position: relative;
+    z-index: 3;
+}
+
+.portfolio-fog1{
+    position: absolute;
+    left: 0;
+    top: 900px;
 }
