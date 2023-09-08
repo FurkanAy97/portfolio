@@ -21,5 +21,8 @@ body {
   font-family: "Poppins";
   background-color: #141d2f;
   color: white;
-/* overflow-x: hidden;   */
+}
+
+:root{
+  scroll-behavior: smooth;
 }

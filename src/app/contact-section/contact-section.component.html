@@ -11,11 +11,35 @@
     </p>
     <span>Need a Frontend developer? Contact me!</span>
   </div>
-  <div class="input-area">
+  <div class="input-area"> 
     <form onsubmit="return false;">
-      <input type="text" placeholder="Your name"/>
-      <input type="text" placeholder="Your email"/>
-      <textarea name="Your message" placeholder="Your message" cols="30" rows="10"></textarea>
+      <label>
+        <input type="text" placeholder="Your name" />
+        <img class="success-img" src="assets/img/success.png" [style.display]="isSuccess ? 'block' : 'none'"/>
+        <img class="fail-img" src="assets/img/fail.png" [style.display]="isFail ? 'block' : 'none'"/>
+      </label>
+      <label>
+        <input type="text" placeholder="Your email" />
+        <img class="success-img" src="assets/img/success.png" [style.display]="isSuccess ? 'block' : 'none'"/>
+        <img class="fail-img" src="assets/img/fail.png" [style.display]="isFail ? 'block' : 'none'"/>
+      </label>
+      <label>
+        <textarea
+          name="Your message"
+          placeholder="Your message"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <img class="success-img" src="assets/img/success.png" [style.display]="isSuccess ? 'block' : 'none'"/>
+        <img class="fail-img" src="assets/img/fail.png" [style.display]="isFail ? 'block' : 'none'"/>
+      </label>
+      <button>Send message :)</button>
     </form>
   </div>
+  <img class="go-up-button"
+    (mouseover)="isHovered = true"
+    (mouseleave)="isHovered = false"
+    [src]="isHovered ? arrowSrcHover : arrowSrc"
+    (click)="onClick('heroSection')"
+  />
 </div>
