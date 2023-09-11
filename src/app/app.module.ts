@@ -13,6 +13,8 @@ import { ProjectComponentComponent } from './project-component/project-component
 import { ProjectTextComponent } from './project-text/project-text.component';
 import { ProjectButtonsComponent } from './project-buttons/project-buttons.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -27,8 +29,9 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     ProjectTextComponent,
     ProjectButtonsComponent,
     ContactSectionComponent,
+    
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

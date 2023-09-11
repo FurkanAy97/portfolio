@@ -117,33 +117,42 @@ form {
     }
   }
 
-  textarea{
+  textarea {
     resize: vertical;
     min-height: 100px;
     max-height: 300px;
   }
 
-  label{
+  label {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     position: relative;
   }
-
 }
 
-.success-img{
+.error-message {
+  color: red;
+  margin-top: 4px; 
+  font-size: 12px; 
+}
+
+.success-img {
   position: absolute;
   right: 25px;
+  top: 12px;
+  max-height: 50px;
 }
 
-.fail-img{
+.fail-img {
   position: absolute;
   right: 25px;
+  top: 12px;
+  max-height: 50px;
 }
 
-
-.go-up-button{
+.go-up-button {
   position: absolute;
   right: 110px;
   bottom: -120px;
