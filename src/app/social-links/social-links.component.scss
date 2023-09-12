@@ -16,6 +16,10 @@
     color: white;
     text-decoration: none;
     font-size: 23px;
+    transition: all 155ms ease-in-out;
+    &:hover{
+        color: #00BEE8;
+    }
 }
 
 .social-icon{

@@ -1,0 +1,63 @@
+.name-title {
+  font-size: 40px;
+  font-weight: 800;
+  height: 50px;
+  cursor: pointer;
+  transition: color 155ms ease-in-out;
+
+  &:hover {
+    color: #00bee8;
+  }
+}
+
+.copyright {
+  font-size: 23px;
+}
+
+.social-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.social-icon {
+  width: 30px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.4);
+  }
+}
+
+.impressum {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: color 155ms ease-in-out;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    background-color: #00bee8;
+    transition: width 155ms ease-in-out;
+  }
+
+  &:hover {
+    color: #00bee8;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.footer-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}

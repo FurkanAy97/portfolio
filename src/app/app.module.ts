@@ -14,6 +14,7 @@ import { ProjectTextComponent } from './project-text/project-text.component';
 import { ProjectButtonsComponent } from './project-buttons/project-buttons.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { FormsModule } from '@angular/forms';
     ProjectTextComponent,
     ProjectButtonsComponent,
     ContactSectionComponent,
+    FooterComponent,
     
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
