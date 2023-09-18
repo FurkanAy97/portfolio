@@ -8,18 +8,5 @@ import { AppComponent } from '../app.component';
 })
 export class HeaderComponent extends AppComponent {
   
-  isMobileScreen:boolean = false;
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: Event): void {
-    this.checkScreenSize();
-  }
-
-  ngOnInit() {
-    this.checkScreenSize();
-  }
-
-  private checkScreenSize(): void {
-    this.isMobileScreen = window.innerWidth <= 990;
-  }
+ 
 }

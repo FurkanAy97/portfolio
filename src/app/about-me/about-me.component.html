@@ -20,9 +20,9 @@
   </div>
 </div>
 
-<div class="about-me-portrait">
+<div *ngIf="!isMobileScreen" class="about-me-portrait">
   <div class="portrait-container"></div>
 </div>
 
-<div class="about-me-vector"></div>
+<div *ngIf="!isMobileScreen" class="about-me-vector"></div>
 <img src="assets/img/fog2.png" class="about-me-fog">

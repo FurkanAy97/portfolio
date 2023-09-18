@@ -61,4 +61,12 @@
   .about-me-text {
     width: 650px;
   }
+
+}
+
+@media (max-width: 990px) {
+  .about-me-text {
+    z-index: 2;
+  }
+
 }

@@ -19,7 +19,7 @@ app-hero-section {
 }
 
 app-social-links {
-  z-index: 2;
+  z-index: 3;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -79,5 +79,29 @@ app-footer {
   z-index: 2;
   margin-top: 190px;
   padding: 0 100px;
-  border-top: 4px solid #00BEE8;
+  border-top: 4px solid #00bee8;
+}
+
+@media (max-width: 990px) {
+  app-header {
+    padding: 0 25px;
+  }
+
+  app-hero-section {
+    height: fit-content;
+  }
+
+  app-social-links {
+    margin-top: 300px;
+    justify-content: center;
+  }
+
+  app-about-me {
+    justify-content: center;
+  }
+
+  app-my-skills {
+    flex-direction: column-reverse;
+    padding: 0 25px;
+  }
 }

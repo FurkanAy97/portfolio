@@ -1,9 +1,9 @@
 <a class="name-title">Furkan</a>
 
-<div class="menu">
+<div class="menu" *ngIf="!isMobileScreen">
     <a (click)="onClick('aboutMe')" class="menu-link">About me</a>
     <a (click)="onClick('mySkills')" class="menu-link">Skills</a>
     <a (click)="onClick('portfolio')" class="menu-link">Portfolio</a>
 </div>
 
-<div class="burger-menu" *ngIf="isMobileScreen"></div>
+<img src="assets/img/burger-menu.png" class="burger-menu-btn" *ngIf="isMobileScreen">
