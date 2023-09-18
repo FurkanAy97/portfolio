@@ -1,4 +1,4 @@
-<button class="skill-btn-mobile">Get in touch</button>
+<button *ngIf="isMobileScreen" class="skill-btn-mobile">Get in touch</button>
 <div class="skill-icons">
     <div *ngFor="let skill of skills; let i = index" class="skill-container">
         <img src="assets/img/skill-icons/{{skill}}.png">

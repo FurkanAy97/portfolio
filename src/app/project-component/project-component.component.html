@@ -1,6 +1,18 @@
-<div *ngFor="let img of projectImages; let i = index" class="project-container" [ngStyle]="{'flex-direction': (i % 2 === 1) ? 'row-reverse' : 'row'}">
-    <img [src]="img">
-    <app-project-text [ngStyle]="{'text-align': (i % 2 === 1) ? 'end' : 'start'}" [projectTitle]="projectTitle[i]" [projectStack]="projectStack[i]" [projectDescription]="projectDescription[i]" ></app-project-text>
+<div class="project-desktop"  *ngFor="let img of projectImages; let i = index"   [ngStyle]="{'flex-direction': (i % 2 === 1) ? 'row-reverse' : 'row'}">
+    <div *ngIf="isMobileScreen" class="project-container">
+        <img [src]="img">
+        <app-project-text [ngStyle]="{'text-align': (i % 2 === 1) ? 'end' : 'start'}" [projectTitle]="projectTitle[i]" [projectStack]="projectStack[i]" [projectDescription]="projectDescription[i]" ></app-project-text>
+    </div>
 </div>
 
-<img class="portfolio-fog1" src="assets/img/fog4.png">
+<div class="project-desktop"  *ngFor="let img of projectImages; let i = index"   [ngStyle]="{'flex-direction': (i % 2 === 1) ? 'row-reverse' : 'row'}">
+    <div *ngIf="!isMobileScreen" class="project-container">
+        <img [src]="img">
+        <app-project-text [ngStyle]="{'text-align': (i % 2 === 1) ? 'end' : 'start'}" [projectTitle]="projectTitle[i]" [projectStack]="projectStack[i]" [projectDescription]="projectDescription[i]" ></app-project-text>
+    </div>
+</div>
+
+
+
+<img *ngIf="!isMobileScreen" class="portfolio-fog1" src="assets/img/fog4.png">
+<img *ngIf="isMobileScreen" class="portfolio-fog-mobile" src="assets/img/fog4-mobile.png">

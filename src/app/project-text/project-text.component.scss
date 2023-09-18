@@ -41,3 +41,9 @@ app-project-buttons{
   gap: 86px;
   margin-top: 35px;
 }
+
+@media (max-width: 990px) {
+  .project-titles{
+    text-align: center;
+  }
+}
