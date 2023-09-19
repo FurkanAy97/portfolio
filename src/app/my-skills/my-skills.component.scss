@@ -96,6 +96,17 @@
   }
 }
 
+@media (max-width: 1260px) {
+  .skill-container{
+    margin-right: 90px;
+  }
+}
+@media (max-width: 1190px) {
+  .skill-container{
+    margin-right: 24px;
+  }
+}
+
 @media (max-width: 990px) {
   .skill-icons {
     width: 100%;

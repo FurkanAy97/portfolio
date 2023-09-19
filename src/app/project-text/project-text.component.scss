@@ -22,15 +22,12 @@
 .project-stack {
   width: 100%;
   height: 28px;
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
   line-height: 120%;
-
   color: #00bee8;
-
 }
 
 app-project-buttons{
@@ -46,4 +43,12 @@ app-project-buttons{
   .project-titles{
     text-align: center;
   }
+  .project-stack {
+    text-align: center;
+  }
+
+  .project-description{
+    text-align: center;
+  }
 }
+

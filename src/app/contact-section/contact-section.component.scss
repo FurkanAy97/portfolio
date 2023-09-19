@@ -165,3 +165,16 @@ form {
   left: 0;
   bottom: -470px;
 }
+
+@media (max-width: 990px) {
+  h1 {
+    margin-top: 0;
+  }
+  .contact-vector {
+    top: 90px;
+  }
+
+  .main-container{
+    padding: 0 25px;
+  }
+}
