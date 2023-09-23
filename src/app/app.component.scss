@@ -98,10 +98,12 @@ app-footer {
 
   app-about-me {
     justify-content: center;
+    padding: 0 25px;
   }
 
   app-my-skills {
     flex-direction: column-reverse;
     padding: 0 25px;
+    margin-top: 200px;
   }
 }

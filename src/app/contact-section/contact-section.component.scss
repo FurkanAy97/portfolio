@@ -169,12 +169,47 @@ form {
 @media (max-width: 990px) {
   h1 {
     margin-top: 0;
+    font-size: 60px;
+    padding: 0 25px;
   }
   .contact-vector {
-    top: 90px;
+    top: 66px;
+    width: 17px;
+    border: 3px solid #4b47ff;
   }
 
   .main-container{
     padding: 0 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .text-container{
+    width: 100%;
+  }
+
+  .input-area{
+    width: 100%;
+  }
+
+  label{
+    width: 100%;
+  }
+
+   form{
+
+    input{
+      width: 100%;
+    }
+
+    textarea{
+      width: 100%;
+    }
+  } 
+
+  .go-up-button{
+    right: 40px;
   }
 }
