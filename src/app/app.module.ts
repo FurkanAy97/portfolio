@@ -31,7 +31,6 @@ import { FooterComponent } from './footer/footer.component';
     ProjectButtonsComponent,
     ContactSectionComponent,
     FooterComponent,
-    
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

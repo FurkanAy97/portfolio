@@ -19,6 +19,7 @@ export class ContactSectionComponent extends AppComponent  {
     email: '',
     message: ''
   };
+  agreeToPolicy: any;
 
   onSubmit() {
     // You can add your form submission logic here.
