@@ -1,10 +1,12 @@
-<div class="footer-name-container">
+<div *ngIf="!isMobileScreen" class="footer-name-container">
     <a class="name-title">Furkan</a>
     <a href="#" class="impressum">Impressum</a>
-</div>
-<div class="copyright">&copy; Furkan Ayhan 2023</div>
-<div class="social-icon-container">
-  <img class="social-icon" src="assets/img/github-big.png" />
-  <img class="social-icon" src="assets/img/email-big.png" />
-  <img class="social-icon" src="assets/img/in-big.png" />
-</div>
+  </div>
+  <a class="name-title" *ngIf="isMobileScreen">Furkan</a>
+  <div class="copyright">&copy; Furkan Ayhan 2023</div>
+  <div class="social-icon-container">
+    <img class="social-icon" src="assets/img/github-big.png" />
+    <img class="social-icon" src="assets/img/email-big.png" />
+    <img class="social-icon" src="assets/img/in-big.png" />
+  </div>
+  <a href="#" *ngIf="isMobileScreen" class="impressum">Impressum</a>

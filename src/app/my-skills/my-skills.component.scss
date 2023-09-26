@@ -31,6 +31,7 @@
   align-items: center;
   flex-direction: column;
   padding: 10px;
+
   h1 {
     font-size: 90px;
     font-weight: 700;
@@ -119,6 +120,7 @@
     width: 100%;
     align-items: flex-end;
     margin-bottom: 20px;
+    margin-right: 45px;
     h1 {
       width: 100%;
       font-size: 60px;
@@ -133,7 +135,6 @@
   }
 
   .skills-vector {
-    right: -8px;
     top: 95px;
   }
 }

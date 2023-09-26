@@ -87,12 +87,8 @@ app-footer {
     padding: 0 25px;
   }
 
-  app-hero-section {
-    height: fit-content;
-  }
-
   app-social-links {
-    margin-top: 300px;
+    margin-top: 400px;
     justify-content: center;
   }
 
@@ -105,5 +101,22 @@ app-footer {
     flex-direction: column-reverse;
     padding: 0 25px;
     margin-top: 200px;
+  }
+
+  app-footer{
+    height: 380px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 25px;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  app-social-links {
+    margin-top: 280px;
+    justify-content: center;
   }
 }
