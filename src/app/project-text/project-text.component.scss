@@ -52,3 +52,15 @@ app-project-buttons{
   }
 }
 
+@media (max-width: 600px) {
+  .text-content-container{
+    width: 100%;
+    gap: 30px;
+  }
+
+  app-project-buttons{
+    gap: unset;
+    justify-content: space-between;
+  }
+}
+

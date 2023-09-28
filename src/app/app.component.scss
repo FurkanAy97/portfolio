@@ -116,7 +116,20 @@ app-footer {
 @media (max-width: 600px) {
 
   app-social-links {
-    margin-top: 280px;
+    margin-top: 270px;
     justify-content: center;
   }
+
+  app-portfolio-header{
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  app-social-links {
+    margin-top: 170px;
+  }
+
+
 }

@@ -26,7 +26,7 @@ export class AppComponent {
   }
 
 
-  public onClick(elementId: string): void { 
+  public handleAnchor(elementId: string): void { 
       this.viewportScroller.scrollToAnchor(elementId);
   }
 }

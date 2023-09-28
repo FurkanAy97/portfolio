@@ -239,6 +239,10 @@ form {
 
   .text-container {
     width: 100%;
+
+    p{
+      width: unset;
+    }
   }
 
   .input-area {

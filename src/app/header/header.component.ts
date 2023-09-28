@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { AppComponent } from '../app.component';
 
 @Component({
@@ -7,6 +7,9 @@ import { AppComponent } from '../app.component';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent extends AppComponent {
-  
- 
+  burgerMenuVisible: boolean = false;
+
+  toggleBurgerMenu() {
+    this.burgerMenuVisible = !this.burgerMenuVisible;
+  }
 }

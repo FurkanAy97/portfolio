@@ -28,8 +28,31 @@
 
 @media (max-width: 600px) {
   .portfolio-fog-mobile {
-    width: 520px;
+    width: 380px;
     left: 0;
     top: 1470px;
+  }
+  
+  .project-container {
+    
+    img{
+      width: 100%;
+    }
+  }
+  
+  .project-stack{
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  app-project-text{
+    padding: 0 25px;
+  }
+
+  .portfolio-fog-mobile {
+    width: 380px;
+    left: 0;
+    top: 1360px;
   }
 }

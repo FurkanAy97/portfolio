@@ -59,4 +59,15 @@
     width: 45px;
     z-index: 3;
   }
+
+  .vector-line-mobile{
+    width: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .social-icon {
+    width: 40px;
+    z-index: 3;
+  }
 }

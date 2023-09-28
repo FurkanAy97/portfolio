@@ -28,7 +28,7 @@
 .hero-name {
   color: white;
   position: relative;
-  z-index: 1;
+  z-index: 11;
   font-size: 70px;
   font-weight: 700;
   height: 4rem;
@@ -100,6 +100,7 @@
   }
 }
 
+
 @media (max-width: 990px) {
   .hero-text {
     position: absolute;
@@ -144,37 +145,67 @@
     top: 250px;
     left: 0;
   }
-
+  
   .hero-fog {
     width: 100%;
     margin-top: 200px;
     margin-left: auto;
   }
-
+  
   .hero-name{
     font-size: 40px; 
   }
-
+  
   .hero-title{
     font-size: 30px;
     margin-top: 0;
   }
-
+  
   .hero-text{
     width: 470px;
     top: 940px;
     z-index: 4;
   }
-
+  
   .hero-iam{
     font-size: 32px;
     left: 10px;
     top: 36px;
   }
-
+  
   .lets-talk-btn{
     padding: 10px 25px 10px 25px;
     margin-top: 25px;
   }
 }
 
+@media (max-width: 450px) {
+  .hero-portrait{
+    width: 390px;
+    position: absolute;
+    top: 90px;
+    left: -12px;
+  }
+
+  .vector{
+    top: 440px;
+  }
+
+  .hero-title{
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .hero-text{
+    width: 300px;
+    top: 740px;
+    z-index: 4;
+  }
+
+  .hero-iam{
+    font-size: 26px;
+    left: -44px;
+    top: 29px;
+  }
+
+}
