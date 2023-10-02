@@ -13,7 +13,7 @@ import { ProjectComponentComponent } from './project-component/project-component
 import { ProjectTextComponent } from './project-text/project-text.component';
 import { ProjectButtonsComponent } from './project-buttons/project-buttons.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 
 
@@ -32,7 +32,7 @@ import { FooterComponent } from './footer/footer.component';
     ContactSectionComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

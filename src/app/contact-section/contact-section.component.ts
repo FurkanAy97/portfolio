@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { AppComponent } from '../app.component';
 
 @Component({
@@ -13,28 +13,44 @@ export class ContactSectionComponent extends AppComponent  {
   isHovered = false;
   isSuccess: boolean = false
   isFail: boolean = false
-
-  formData = {
+  @ViewChild('myForm') myForm!: ElementRef
+  @ViewChild('nameField')nameField!: ElementRef
+  @ViewChild('emailField') emailField!: ElementRef
+  @ViewChild('messageField') messageField!: ElementRef
+  
+  
+   formData = {
     name: '',
     email: '',
     message: ''
   };
   agreeToPolicy: boolean = false
 
-  onSubmit() {
-    // You can add your form submission logic here.
-    // Access form data from this.formData.
-    console.log('Form submitted with data:', this.formData);
 
-    // You can also perform validation checks here if needed.
-    // For example, you can check if any field is empty and display an error message.
-    if (!this.formData.name || !this.formData.email || !this.formData.message) {
-      // Display an error message or take appropriate action.
-      console.log('Please fill in all required fields.');
-      return;
-    }
+  async sendMail(){
+    let nameField = this.nameField.nativeElement
+    let emailField = this.emailField.nativeElement
+    let messageField = this.messageField.nativeElement;
 
-    // If all validation checks pass, you can proceed with form submission.
-    // Example: Send data to a server.
+    nameField.disabled = true;
+    emailField.disabled = true;
+    messageField.disabled = true;
+    /* Animation */
+    let formData = new FormData();
+    formData.append('name', nameField.value)
+    formData.append('emailField', emailField.value)
+    formData.append('messageField', messageField.value)
+
+    await fetch('https://furkan-ayhan.developerakademie.net/send_mail/send_mail.php',  
+    {
+      method: 'POST',
+      body: formData
+    })
+    .then()
+    /* Text anzeigen Nachicht gesendet */
+    nameField.disabled = false;
+    emailField.disabled = false;
+    messageField.disabled = false;
   }
+
 }

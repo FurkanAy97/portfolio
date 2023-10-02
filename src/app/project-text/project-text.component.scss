@@ -57,7 +57,9 @@ app-project-buttons{
     width: 100%;
     gap: 30px;
   }
+}
 
+@media (max-width: 450px) {
   app-project-buttons{
     gap: unset;
     justify-content: space-between;

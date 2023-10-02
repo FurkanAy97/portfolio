@@ -12,21 +12,24 @@
     <span>Need a Frontend developer? Contact me!</span>
   </div>
   <div class="input-area"> 
-    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <form #myForm (submit)="sendMail()" action="https://furkan-ayhan.developerakademie.net/send_mail/send_mail.php">
       <label>
-        <input type="text" placeholder="Your name" [style.border]="name.dirty || name.touched ? (name.valid ? '1px solid #4b47ff' : '1px solid red') : ''" required [(ngModel)]="formData.name" name="name" #name="ngModel" >
+        <input type="text" #nameField placeholder="Your name" [style.border]="name.dirty || name.touched ? (name.valid ? '1px solid #4b47ff' : '1px solid red') : ''" 
+        required [(ngModel)]="formData.name" name="name" #name="ngModel" >
         <img class="success-img" src="assets/img/success.png" [style.display]="name.valid && (name.dirty || name.touched) ? 'block' : 'none'"/>
         <img class="fail-img" src="assets/img/fail.png" [style.display]="name.invalid && (name.dirty || name.touched) ? 'block' : 'none'"/>
         <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error-message">Name is required.</div>
       </label>
       <label>
-        <input type="email" placeholder="Your email" [style.border]="email.dirty || email.touched ? (email.valid ? '1px solid #4b47ff' : '1px solid red') : ''" required [(ngModel)]="formData.email" name="email" #email="ngModel"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+        <input type="email" #emailField placeholder="Your email" [style.border]="email.dirty || email.touched ? (email.valid ? '1px solid #4b47ff' : '1px solid red') : ''" 
+        required [(ngModel)]="formData.email" name="email" #email="ngModel"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
         <img class="success-img" src="assets/img/success.png" [style.display]="email.valid && (email.dirty || email.touched) ? 'block' : 'none'"/>
         <img class="fail-img" src="assets/img/fail.png" [style.display]="email.invalid && (email.dirty || email.touched) ? 'block' : 'none'"/>
         <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">Please enter a valid email address.</div>
       </label>
       <label>
-        <textarea name="Your message" [style.border]="message.dirty || message.touched ? (message.valid ? '1px solid #4b47ff' : '1px solid red') : ''" placeholder="Your message" cols="30" rows="10" required [(ngModel)]="formData.message" name="message" #message="ngModel"></textarea>
+        <textarea #messageField [style.border]="message.dirty || message.touched ? (message.valid ? '1px solid #4b47ff' : '1px solid red') : ''" placeholder="Your message" cols="30" rows="10" 
+        required [(ngModel)]="formData.message" name="message" #message="ngModel"></textarea>
         <img class="success-img" src="assets/img/success.png" [style.display]="message.valid && (message.dirty || message.touched) ? 'block' : 'none'"/>
         <img class="fail-img" src="assets/img/fail.png" [style.display]="message.invalid && (message.dirty || message.touched) ? 'block' : 'none'"/>
         <div *ngIf="message.invalid && (message.dirty || message.touched)" class="error-message">Message is required.</div>
@@ -35,7 +38,7 @@
         <input class="checkbox" type="checkbox" [(ngModel)]="agreeToPolicy" [ngModelOptions]="{standalone: true}"/>
         <p>I've read the <span>privacy policy</span> and agree to the processing of my data as outlined.</p>
       </div>
-      <button class="send-message-btn" type="submit" [disabled]="!agreeToPolicy">Send message :)</button>
+      <button [ngClass]="agreeToPolicy ? 'send-message-btn' : 'send-message-btn-disabled'" type="submit" [disabled]="!agreeToPolicy">Send message :)</button>
     </form>
     
     
