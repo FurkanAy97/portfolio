@@ -12,7 +12,7 @@
     <span>Need a Frontend developer? Contact me!</span>
   </div>
   <div class="input-area"> 
-    <form #myForm (submit)="sendMail()" action="https://furkan-ayhan.developerakademie.net/send_mail/send_mail.php">
+    <form #myForm (submit)="sendMail()">
       <label>
         <input type="text" #nameField placeholder="Your name" [style.border]="name.dirty || name.touched ? (name.valid ? '1px solid #4b47ff' : '1px solid red') : ''" 
         required [(ngModel)]="formData.name" name="name" #name="ngModel" >
@@ -34,6 +34,7 @@
         <img class="fail-img" src="assets/img/fail.png" [style.display]="message.invalid && (message.dirty || message.touched) ? 'block' : 'none'"/>
         <div *ngIf="message.invalid && (message.dirty || message.touched)" class="error-message">Message is required.</div>
       </label>
+      <div *ngIf="isSentSuccessfully" class="success-msg">Your Message was sent successfully!</div>
       <div class="checkbox-container">
         <input class="checkbox" type="checkbox" [(ngModel)]="agreeToPolicy" [ngModelOptions]="{standalone: true}"/>
         <p>I've read the <span>privacy policy</span> and agree to the processing of my data as outlined.</p>
