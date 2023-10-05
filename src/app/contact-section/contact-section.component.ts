@@ -49,6 +49,7 @@ export class ContactSectionComponent extends AppComponent {
       .then((response) => {
         if (response.ok) {
           this.isSentSuccessfully = true;
+          console.error(' send the mail.');
         } else {
           this.isSentSuccessfully = false;
           console.error('Failed to send the mail.');
@@ -61,5 +62,6 @@ export class ContactSectionComponent extends AppComponent {
     nameField.disabled = false;
     emailField.disabled = false;
     messageField.disabled = false;
+    this.isSentSuccessfully = true;
   }
 }
