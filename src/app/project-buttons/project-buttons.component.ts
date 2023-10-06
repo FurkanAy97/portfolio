@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project-buttons',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./project-buttons.component.scss']
 })
 export class ProjectButtonsComponent {
-
+  @Input() githubLink: string | undefined;
+  @Input() liveDemo: string | undefined;
 }

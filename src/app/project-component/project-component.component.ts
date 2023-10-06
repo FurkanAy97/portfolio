@@ -23,5 +23,16 @@ export class ProjectComponentComponent extends AppComponent {
     'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
     'A very Simple Customer Relationship Management system working with CRUD functionality.',
   ];
+  grandParentGithubLink: Array<string> = [
+    'https://github.com/FurkanAy97/JOIN-Project',
+    'https://github.com/FurkanAy97/Sharky',
+  ]
+
+  grandParentLiveDemo: Array<string> = [
+    'https://furkan-ayhan.developerakademie.net/Join-Furkan/index.html',
+    'https://furkan-ayhan.developerakademie.net/Sharky/index.html',
+  ]
+
+
 
 }

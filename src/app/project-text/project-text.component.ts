@@ -9,4 +9,6 @@ export class ProjectTextComponent {
   @Input() projectTitle: string | undefined;
   @Input() projectStack: string | undefined;
   @Input() projectDescription: string | undefined;
+  @Input() parentGithubLink: string | undefined;
+  @Input() parentLiveDemo: string | undefined;
 }

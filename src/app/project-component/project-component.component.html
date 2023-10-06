@@ -1,14 +1,14 @@
 <div class="project-mobile"  *ngFor="let img of projectImages; let i = index"   [ngStyle]="{'flex-direction': (i % 2 === 1) ? 'row-reverse' : 'row'}">
     <div *ngIf="isMobileScreen" class="project-container">
         <img [src]="img">
-        <app-project-text [projectTitle]="projectTitle[i]" [projectStack]="projectStack[i]" [projectDescription]="projectDescription[i]" ></app-project-text>
+        <app-project-text [projectTitle]="projectTitle[i]" [projectStack]="projectStack[i]" [projectDescription]="projectDescription[i]" [parentGithubLink]="grandParentGithubLink[i]" [parentLiveDemo]="grandParentLiveDemo[i]" ></app-project-text>
     </div>
 </div>
 
 <div class="project-desktop"  *ngFor="let img of projectImages; let i = index">
     <div *ngIf="!isMobileScreen" class="project-container" [ngStyle]="{'flex-direction': (i % 2 === 1) ? 'row-reverse' : 'row'}">
         <img [src]="img">
-        <app-project-text [ngStyle]="{'text-align': (i % 2 === 1) ? 'end' : 'start'}" [projectTitle]="projectTitle[i]" [projectStack]="projectStack[i]" [projectDescription]="projectDescription[i]" ></app-project-text>
+        <app-project-text [ngStyle]="{'text-align': (i % 2 === 1) ? 'end' : 'start'}" [projectTitle]="projectTitle[i]" [projectStack]="projectStack[i]" [projectDescription]="projectDescription[i]" [parentGithubLink]="grandParentGithubLink[i]" [parentLiveDemo]="grandParentLiveDemo[i]"></app-project-text>
     </div>
 </div>
 
