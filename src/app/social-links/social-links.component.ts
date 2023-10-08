@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-social-links',
   templateUrl: './social-links.component.html',
   styleUrls: ['./social-links.component.scss']
 })
-export class SocialLinksComponent extends AppComponent {
+export class SocialLinksComponent extends HomeComponent {
 }

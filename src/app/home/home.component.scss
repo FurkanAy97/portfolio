@@ -1,0 +1,93 @@
+  
+  app-social-links {
+    z-index: 3;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    gap: 42px;
+  }
+  
+  app-about-me {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 130px;
+    padding: 0 100px;
+  }
+  
+  app-my-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 320px;
+    padding: 0 100px;
+  }
+  
+  app-portfolio-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    padding: 0 100px;
+    overflow-x: hidden;
+  }
+  
+  app-project-component {
+    position: relative;
+  }
+  
+  app-contact-section {
+    position: relative;
+    z-index: 2;
+    margin-top: 200px;
+    padding: 0 100px;
+  }
+
+  @media (max-width: 990px) {
+
+
+  app-social-links {
+    margin-top: 400px;
+    justify-content: center;
+  }
+
+  app-about-me {
+    justify-content: center;
+    padding: 0 25px;
+  }
+
+  app-my-skills {
+    flex-direction: column-reverse;
+    padding: 0 25px;
+    margin-top: 200px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  app-social-links {
+    margin-top: 270px;
+    justify-content: center;
+  }
+
+  app-portfolio-header{
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  app-social-links {
+    margin-top: 170px;
+  }
+
+
+}

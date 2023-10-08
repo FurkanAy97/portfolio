@@ -15,6 +15,8 @@ import { ProjectButtonsComponent } from './project-buttons/project-buttons.compo
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     ProjectButtonsComponent,
     ContactSectionComponent,
     FooterComponent,
+    ImprintComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

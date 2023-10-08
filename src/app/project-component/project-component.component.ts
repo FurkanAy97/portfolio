@@ -1,12 +1,12 @@
 import { Component, HostListener } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-project-component',
   templateUrl: './project-component.component.html',
   styleUrls: ['./project-component.component.scss'],
 })
-export class ProjectComponentComponent extends AppComponent {
+export class ProjectComponentComponent extends HomeComponent {
   projectImages: Array<string> = [
     'assets/img/join.png',
     'assets/img/sharkie.png',

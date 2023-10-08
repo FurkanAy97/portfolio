@@ -1,12 +1,12 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-contact-section',
   templateUrl: './contact-section.component.html',
   styleUrls: ['./contact-section.component.scss'],
 })
-export class ContactSectionComponent extends AppComponent {
+export class ContactSectionComponent extends HomeComponent {
   arrowSrc = 'assets/img/go-up-button.png';
   arrowSrcHover = 'assets/img/gp-up-button-blue.png';
   isHovered = false;

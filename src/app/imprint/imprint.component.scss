@@ -1,0 +1,18 @@
+.imprint-container{
+    padding: 0 100px;
+    margin-top: 10%;
+    z-index: 5;
+    height: 32dvh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+
+    a{
+        color: #00bee8;
+        &:hover{
+            color: #00d0ff;
+        }
+    }
+}
