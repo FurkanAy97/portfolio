@@ -196,9 +196,15 @@ form {
   flex-direction: row !important;
   width: 617px;
   gap: 8px;
+  
+  a {
+    color: #5754ff;
+    text-decoration: none;
+    
+    &:hover{
+      color: #817ffc;
 
-  span {
-    color: #4b47ff;
+    }
   }
 }
 
