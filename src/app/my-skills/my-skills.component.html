@@ -1,15 +1,26 @@
-<button *ngIf="isMobileScreen" class="skill-btn-mobile" (click)="handleAnchor('contactSection')">Get in touch</button>
+<button
+  *ngIf="isMobileScreen"
+  class="skill-btn-mobile"
+  (click)="handleAnchor('contactSection')"
+>
+  Get in touch
+</button>
 <div class="skill-icons">
-    <div *ngFor="let skill of skills; let i = index" class="skill-container">
-        <img src="assets/img/skill-icons/{{skill}}.png">
-        <p class="skill-name">{{skillNames[i]}}</p>
-    </div>
+  <div *ngFor="let skill of skills; let i = index" class="skill-container">
+    <img src="assets/img/skill-icons/{{ skill }}.png" />
+    <p class="skill-name">{{ skillNames[i] }}</p>
+  </div>
 </div>
 <div class="skill-text">
-    <h1>My Skills</h1>
-    <p>I have grown my frontend developments skills that have allowed me to create different real projects.</p>
-    <button *ngIf="!isMobileScreen" (click)="handleAnchor('contactSection')">Get in touch</button>
-    <div class="skills-vector"></div>
+  <h1>My Skills</h1>
+  <p>
+    My enhanced frontend development skills have enabled me to successfully
+    bring various real projects to life.
+  </p>
+  <button *ngIf="!isMobileScreen" (click)="handleAnchor('contactSection')">
+    Get in touch
+  </button>
+  <div class="skills-vector"></div>
 </div>
 
-<img class="skill-fog" src="assets/img/fog3.png">
+<img class="skill-fog" src="assets/img/fog3.png" />

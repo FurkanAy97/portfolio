@@ -79,6 +79,8 @@
 
 .scroll-down {
   position: absolute;
+  height: fit-content;
+  top: 850px;
   right: 40px;
   bottom: 40px;
   transform: rotate(90deg);
