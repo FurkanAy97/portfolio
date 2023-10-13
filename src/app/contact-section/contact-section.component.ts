@@ -40,7 +40,7 @@ export class ContactSectionComponent extends HomeComponent {
     formData.append('message', messageField.value);
 
     await fetch(
-      'https://furkan-ayhan.developerakademie.net/send_mail/send_mail.php',
+      'https://furkan-ayhan.de/send_mail/send_mail.php',
       {
         method: 'POST',
         body: formData,
