@@ -37,7 +37,7 @@
       <div *ngIf="isSentSuccessfully" class="success-msg">Your Message was sent successfully!</div>
       <div class="checkbox-container">
         <input class="checkbox" type="checkbox" [(ngModel)]="agreeToPolicy" [ngModelOptions]="{standalone: true}"/>
-        <p>I've read the <a href="privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</p>
+        <p>I've read the <a [routerLink]="['/privacy-policy']">privacy policy</a> and agree to the processing of my data as outlined.</p>
       </div>
       <button [ngClass]="agreeToPolicy && name.valid && email.valid && message.valid ? 'send-message-btn' : 'send-message-btn-disabled'" type="submit"
         [disabled]="!agreeToPolicy || name.invalid || email.invalid || message.invalid">Send message :)</button>

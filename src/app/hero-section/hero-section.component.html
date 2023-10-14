@@ -6,6 +6,8 @@
     <span class="hero-iam">i am</span>
     <button class="lets-talk-btn" (click)="handleAnchor('contactSection')">Let’s talk!</button>
 </div>
-<img class="hero-fog" src="assets/img/fog1.png" alt="fog">
+<div class="hero-fog-container">
+    <img class="hero-fog" src="assets/img/fog1.png" alt="fog">
+</div>
 <span class="scroll-down" (click)="handleAnchor('aboutMe')" *ngIf="!isMobileScreen">Scroll down <img src="assets/img/arrow-down-line.png"></span>
 

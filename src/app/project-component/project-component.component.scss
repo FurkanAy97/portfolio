@@ -24,6 +24,12 @@
   .project-container {
     flex-direction: column;
   }
+  .portfolio-fog-mobile {
+    position: absolute;
+    width: 600px;
+    left: 0;
+    top: 1380px;
+  }
 }
 
 @media (max-width: 600px) {
