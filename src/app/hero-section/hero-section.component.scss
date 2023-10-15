@@ -65,7 +65,7 @@
   margin-top: 35px;
   margin-right: 60px;
   z-index: 2;
-
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
   &:hover {
     transform: scale(1.2);
     background-color: #4b47ff;
@@ -225,4 +225,22 @@
     top: 29px;
   }
 
+}
+
+@media (min-height: 1200px) {
+  .vector {
+    top: 600px;
+  }
+
+  .hero-portrait {
+    top: 175px;
+  }
+
+  .hero-fog-container{
+    height: 100dvh;
+  }
+
+  .hero-text {
+    top: 350px;
+  }
 }
