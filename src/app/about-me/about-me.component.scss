@@ -7,6 +7,7 @@
     margin: 0;
   }
 }
+
 .subtext {
   display: flex;
   align-items: center;
@@ -41,16 +42,16 @@
 
 .about-me-vector {
   position: absolute;
-  width: 245px;
+  width: 545px;
   height: 0px;
-  right: 0px;
+  right: -300px;
   z-index: 1;
   border: 3px solid #00bee8;
 }
 
 .about-me-fog {
   position: absolute;
-  right: 0;
+  right: -400px;
   top: -330px;
 }
 

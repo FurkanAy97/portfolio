@@ -1,5 +1,12 @@
+.hero-container{
+  position: relative;
+  width: 100vw;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .vector {
-  width: 100%;
+  min-width: 100vw;
   height: 1000px;
   position: absolute;
   left: 0;
@@ -88,7 +95,7 @@
 .scroll-down {
   position: absolute;
   height: fit-content;
-  top: 850px;
+  top: 950px;
   right: 40px;
   bottom: 40px;
   transform: rotate(90deg);

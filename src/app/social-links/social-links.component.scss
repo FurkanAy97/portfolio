@@ -1,15 +1,12 @@
 .vector-line {
-  width: 100px;
+  width: 700px;
   height: 0px;
-
-  /* Style 1/style 1 b -blues/blues 1 */
   border: solid #4b47ff;
   border-radius: 0 4px 4px 0;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-left: -640px;
 }
 
 .vector-line-mobile {
@@ -17,12 +14,8 @@
   left: 0;
   width: 100px;
   height: 0px;
-
-  /* Style 1/style 1 b -blues/blues 1 */
   border: solid #4b47ff;
   border-radius: 0 4px 4px 0;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;

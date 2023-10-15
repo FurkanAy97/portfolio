@@ -1,23 +1,25 @@
-<a class="name-title" href="">Furkan</a>
-
-<div class="menu" *ngIf="!isMobileScreen">
-  <a (click)="handleAnchor('aboutMe')" class="menu-link">About me</a>
-  <a (click)="handleAnchor('mySkills')" class="menu-link">Skills</a>
-  <a (click)="handleAnchor('portfolio')" class="menu-link">Portfolio</a>
-</div>
-
-<img
-  src="assets/img/burger-menu.png"
-  class="burger-menu-btn"
-  *ngIf="isMobileScreen && !burgerMenuVisible"
-  (click)="toggleBurgerMenu()"
-/>
-
-<img src="assets/img/menu-X.png" *ngIf="burgerMenuVisible" class="menu-x" (click)="toggleBurgerMenu()">
-
-<div class="hamburger-menu" [ngStyle]="{'transform': burgerMenuVisible ? 'translateX(0%)' : 'translateX(200%)'}">
-    <a (click)="handleAnchor('aboutMe'); toggleBurgerMenu()" class="menu-link">About me</a>
-    <a (click)="handleAnchor('mySkills'); toggleBurgerMenu()" class="menu-link">Skills</a>
-    <a (click)="handleAnchor('portfolio'); toggleBurgerMenu()" class="menu-link">Portfolio</a>
-    <a (click)="handleAnchor('contactSection'); toggleBurgerMenu()" class="menu-link">Contact</a>
+<div class="header-container">
+  <a class="name-title" href="">Furkan</a>
+  
+  <div class="menu" *ngIf="!isMobileScreen">
+    <a (click)="handleAnchor('aboutMe')" class="menu-link">About me</a>
+    <a (click)="handleAnchor('mySkills')" class="menu-link">Skills</a>
+    <a (click)="handleAnchor('portfolio')" class="menu-link">Portfolio</a>
+  </div>
+  
+  <img
+    src="assets/img/burger-menu.png"
+    class="burger-menu-btn"
+    *ngIf="isMobileScreen && !burgerMenuVisible"
+    (click)="toggleBurgerMenu()"
+  />
+  
+  <img src="assets/img/menu-X.png" *ngIf="burgerMenuVisible" class="menu-x" (click)="toggleBurgerMenu()">
+  
+  <div class="hamburger-menu" [ngStyle]="{'transform': burgerMenuVisible ? 'translateX(0%)' : 'translateX(200%)'}">
+      <a (click)="handleAnchor('aboutMe'); toggleBurgerMenu()" class="menu-link">About me</a>
+      <a (click)="handleAnchor('mySkills'); toggleBurgerMenu()" class="menu-link">Skills</a>
+      <a (click)="handleAnchor('portfolio'); toggleBurgerMenu()" class="menu-link">Portfolio</a>
+      <a (click)="handleAnchor('contactSection'); toggleBurgerMenu()" class="menu-link">Contact</a>
+  </div>
 </div>
