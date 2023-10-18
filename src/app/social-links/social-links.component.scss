@@ -68,3 +68,12 @@ a{
     z-index: 3;
   }
 }
+@media (max-width: 380px) {
+  .social-icon {
+    width: 35px;
+  }
+
+  .vector-line-mobile{
+    width: 30px;
+  }
+}

@@ -1,4 +1,4 @@
-.hero-container{
+.hero-container {
   position: relative;
   width: 100vw;
   max-width: 1920px;
@@ -79,7 +79,7 @@
   }
 }
 
-.hero-fog-container{
+.hero-fog-container {
   height: 850px;
   display: flex;
   justify-content: flex-start;
@@ -117,6 +117,25 @@
   }
 }
 
+@media (max-width: 1250px) {
+  .hero-text {
+    width: 600px;
+  }
+  .hero-name {
+    font-size: 50px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .hero-iam {
+    left: 60px;
+    top: 33px;
+    font-size: 33px;
+  }
+}
 
 @media (max-width: 990px) {
   .hero-text {
@@ -125,8 +144,23 @@
     margin-right: auto;
     width: 700px;
     left: 0;
+
     right: 0;
-    top: 1000px;
+    top: 1010px;
+  }
+
+  .hero-name {
+    font-size: 70px;
+  }
+
+  .hero-title{
+    margin-top: 35px;
+  }
+
+  .hero-iam {
+    left: 10px;
+    top: 43px;
+    font-size: 43px;
   }
 
   .hero-portrait {
@@ -145,7 +179,6 @@
 
   .hero-fog {
     width: 100%;
-
   }
 
   .vector {
@@ -155,63 +188,79 @@
 }
 
 @media (max-width: 600px) {
-  .hero-portrait{
+  .hero-portrait {
     width: 410px;
     position: absolute;
-    top: 90px;
+    top: 170px;
     left: 0;
   }
-  
+
   .hero-fog {
     width: 100%;
     margin-top: -50px;
   }
-  
-  .hero-name{
-    font-size: 40px; 
+
+  .hero-name {
+    font-size: 40px;
   }
-  
-  .hero-title{
+
+  .hero-title {
     font-size: 20px;
     margin-top: 0;
   }
-  
-  .hero-text{
+
+  .hero-text {
     width: 300px;
-    top: 740px;
+    top: 840px;
     z-index: 4;
   }
-  
-  .hero-iam{
+
+  .hero-iam {
     font-size: 26px;
     left: -44px;
     top: 29px;
   }
-  
-  .lets-talk-btn{
+
+  .lets-talk-btn {
     padding: 10px 25px 10px 25px;
     margin-top: 25px;
   }
 
   .vector {
     height: 60dvh;
-    top: 440px;
+    top: 460px;
+  }
+}
+
+@media (max-width: 600px) and (max-height: 1100px) {
+  .hero-text {
+    top: 740px;
+  }
+}
+
+@media (max-width: 450px) and (min-height: 1100px) {
+  .hero-portrait {
+    top: 180px !important;
+  }
+
+  .hero-text {
+    top: 800px !important;
   }
 }
 
 @media (max-width: 450px) {
-  .hero-portrait{
+  .hero-portrait {
     width: 390px;
     position: absolute;
     top: 90px;
-    left: -12px;
+    left: -2px;
   }
 
-  .vector{
+  .vector {
     top: 440px;
   }
 
-  .hero-title{
+  .hero-title {
     font-size: 20px;
     margin-top: 0;
   }
@@ -219,35 +268,34 @@
   .hero-fog {
     width: 100%;
   }
-  
-  .hero-text{
+
+  .hero-text {
     width: 300px;
     top: 740px;
     z-index: 4;
   }
 
-  .hero-iam{
-    font-size: 26px;
-    left: -44px;
-    top: 29px;
+  .hero-name {
+    font-size: 30px;
+    height: 3rem;
   }
 
+  .hero-iam {
+    font-size: 22px;
+    left: -2px;
+    top: 22px;
+  }
+  .hero-title {
+    font-size: 18px;
+  }
+
+  .lets-talk-btn {
+    padding: 7px 22px 7px 22px;
+  }
 }
 
-@media (min-height: 1200px) {
-  .vector {
-    top: 600px;
-  }
-
+@media (max-width: 380px) {
   .hero-portrait {
-    top: 175px;
-  }
-
-  .hero-fog-container{
-    height: 100dvh;
-  }
-
-  .hero-text {
-    top: 350px;
+    left: -32px;
   }
 }

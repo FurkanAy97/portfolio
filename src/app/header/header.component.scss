@@ -93,8 +93,10 @@
   cursor: pointer;
 }
 
-@media (max-width: 990px) {
-  
+@media (max-width: 850px) {
+  .header-container{
+    padding: 0 25px;
+  }
 }
 
 
