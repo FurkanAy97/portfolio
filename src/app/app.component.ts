@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'portfolio';
   isMobileScreen:boolean = false;
   
-  constructor(private viewportScroller: ViewportScroller) {}
+  constructor(public viewportScroller: ViewportScroller) {}
   
   @HostListener('window:resize', ['$event'])
   onResize(event: Event): void {

@@ -12,7 +12,7 @@
     <span>Need a Frontend developer? Contact me!</span>
   </div>
   <div class="input-area"> 
-    <form #myForm (submit)="sendMail()">
+    <form #myForm="ngForm" (submit)="sendMail()">
       <label>
         <input type="text" class="input-field" #nameField placeholder="Your name" [style.border]="name.dirty || name.touched ? (name.valid ? '1px solid #4b47ff' : '1px solid red') : ''" 
         required [(ngModel)]="formData.name" name="name" #name="ngModel" >
@@ -40,7 +40,7 @@
         <p>I've read the <a [routerLink]="['/privacy-policy']">privacy policy</a> and agree to the processing of my data as outlined.</p>
       </div>
       <button [ngClass]="agreeToPolicy && name.valid && email.valid && message.valid ? 'send-message-btn' : 'send-message-btn-disabled'" type="submit"
-        [disabled]="!agreeToPolicy || name.invalid || email.invalid || message.invalid">Send message :)</button>
+        [disabled]="!agreeToPolicy || name.invalid || email.invalid || message.invalid" >Send message :)</button>
     </form>
     
     

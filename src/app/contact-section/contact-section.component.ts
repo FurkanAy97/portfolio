@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { HomeComponent } from '../home/home.component';
-import { FormGroup } from '@angular/forms';
+import {FormGroup, NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-contact-section',
@@ -25,7 +25,6 @@ export class ContactSectionComponent extends HomeComponent {
     message: '',
   };
   agreeToPolicy: boolean = false;
-  ngForm: any;
 
   async sendMail() {
     let nameField = this.nameField.nativeElement;
@@ -49,23 +48,6 @@ export class ContactSectionComponent extends HomeComponent {
           body: formData,
         }
       );
-
-      if (response.ok) {
-        this.isSentSuccessfully = true;
-        nameField.value = '';
-        emailField.value = '';
-        messageField.value = '';
-        this.agreeToPolicy = false;
-        this.myForm.controls['name'].markAsUntouched();
-        this.myForm.controls['name'].setErrors({ 'incorrect': true });
-        this.myForm.controls['email'].markAsUntouched();
-        this.myForm.controls['email'].setErrors({ 'incorrect': true });
-        this.myForm.controls['message'].markAsUntouched();
-        this.myForm.controls['message'].setErrors({ 'incorrect': true });
-      } else {
-        this.isSentSuccessfully = false;
-        console.error('Failed to send the mail.');
-      }
     } catch (error) {
       this.isSentSuccessfully = false;
       console.error('An error occurred:', error);
@@ -73,11 +55,13 @@ export class ContactSectionComponent extends HomeComponent {
       nameField.disabled = false;
       emailField.disabled = false;
       messageField.disabled = false;
-      nameField.value = '';
-      nameField.setCustomValidity('Invalid field.');
-      emailField.value = '';
-      messageField.value = '';
+      this.isSentSuccessfully = true;
       this.agreeToPolicy = false;
+      this.myForm.reset();
     }
+  }
+
+  resetForm(form: NgForm) {
+    form.resetForm();
   }
 }
