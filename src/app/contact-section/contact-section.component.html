@@ -14,14 +14,14 @@
   <div class="input-area"> 
     <form #myForm (submit)="sendMail()">
       <label>
-        <input type="text" #nameField placeholder="Your name" [style.border]="name.dirty || name.touched ? (name.valid ? '1px solid #4b47ff' : '1px solid red') : ''" 
+        <input type="text" class="input-field" #nameField placeholder="Your name" [style.border]="name.dirty || name.touched ? (name.valid ? '1px solid #4b47ff' : '1px solid red') : ''" 
         required [(ngModel)]="formData.name" name="name" #name="ngModel" >
         <img class="success-img" src="assets/img/success.png" [style.display]="name.valid && (name.dirty || name.touched) ? 'block' : 'none'"/>
         <img class="fail-img" src="assets/img/fail.png" [style.display]="name.invalid && (name.dirty || name.touched) ? 'block' : 'none'"/>
         <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error-message">Name is required.</div>
       </label>
       <label>
-        <input type="email" #emailField placeholder="Your email" [style.border]="email.dirty || email.touched ? (email.valid ? '1px solid #4b47ff' : '1px solid red') : ''" 
+        <input type="email" class="input-field" #emailField placeholder="Your email" [style.border]="email.dirty || email.touched ? (email.valid ? '1px solid #4b47ff' : '1px solid red') : ''" 
         required [(ngModel)]="formData.email" name="email" #email="ngModel"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
         <img class="success-img" src="assets/img/success.png" [style.display]="email.valid && (email.dirty || email.touched) ? 'block' : 'none'"/>
         <img class="fail-img" src="assets/img/fail.png" [style.display]="email.invalid && (email.dirty || email.touched) ? 'block' : 'none'"/>

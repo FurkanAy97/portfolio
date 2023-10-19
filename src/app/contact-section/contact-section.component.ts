@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { HomeComponent } from '../home/home.component';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-section',
@@ -13,7 +14,7 @@ export class ContactSectionComponent extends HomeComponent {
   isSuccess: boolean = false;
   isFail: boolean = false;
   isSentSuccessfully: boolean = false;
-  @ViewChild('myForm') myForm!: ElementRef;
+  @ViewChild('myForm') myForm!: FormGroup;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
@@ -24,6 +25,7 @@ export class ContactSectionComponent extends HomeComponent {
     message: '',
   };
   agreeToPolicy: boolean = false;
+  ngForm: any;
 
   async sendMail() {
     let nameField = this.nameField.nativeElement;
@@ -33,35 +35,49 @@ export class ContactSectionComponent extends HomeComponent {
     nameField.disabled = true;
     emailField.disabled = true;
     messageField.disabled = true;
-    /* Animation */
+
     let formData = new FormData();
     formData.append('name', nameField.value);
     formData.append('email', emailField.value);
     formData.append('message', messageField.value);
 
-    await fetch(
-      'https://furkan-ayhan.de/send_mail/send_mail.php',
-      {
-        method: 'POST',
-        body: formData,
-      }
-    )
-      .then((response) => {
-        if (response.ok) {
-          this.isSentSuccessfully = true;
-          console.error(' send the mail.');
-        } else {
-          this.isSentSuccessfully = false;
-          console.error('Failed to send the mail.');
+    try {
+      const response = await fetch(
+        'https://furkan-ayhan.de/send_mail/send_mail.php',
+        {
+          method: 'POST',
+          body: formData,
         }
-      })
-      .catch((error) => {
+      );
+
+      if (response.ok) {
+        this.isSentSuccessfully = true;
+        nameField.value = '';
+        emailField.value = '';
+        messageField.value = '';
+        this.agreeToPolicy = false;
+        this.myForm.controls['name'].markAsUntouched();
+        this.myForm.controls['name'].setErrors({ 'incorrect': true });
+        this.myForm.controls['email'].markAsUntouched();
+        this.myForm.controls['email'].setErrors({ 'incorrect': true });
+        this.myForm.controls['message'].markAsUntouched();
+        this.myForm.controls['message'].setErrors({ 'incorrect': true });
+      } else {
         this.isSentSuccessfully = false;
-        console.error('An error occurred:', error);
-      });
-    nameField.disabled = false;
-    emailField.disabled = false;
-    messageField.disabled = false;
-    this.isSentSuccessfully = true;
+        console.error('Failed to send the mail.');
+      }
+    } catch (error) {
+      this.isSentSuccessfully = false;
+      console.error('An error occurred:', error);
+    } finally {
+      nameField.disabled = false;
+      emailField.disabled = false;
+      messageField.disabled = false;
+      nameField.value = '';
+      nameField.setCustomValidity('Invalid field.');
+      emailField.value = '';
+      messageField.value = '';
+      this.agreeToPolicy = false;
+    }
   }
 }

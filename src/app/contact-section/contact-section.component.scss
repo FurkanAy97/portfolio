@@ -38,6 +38,31 @@ h1 {
   }
 }
 
+.input-field {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 10px;
+  width: 617px;
+  height: 50px;
+  background: #141d2f;
+  border: 1px solid #4b47ff;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #00bee8;
+  }
+}
+
 form {
   display: flex;
   justify-content: center;
@@ -47,31 +72,6 @@ form {
 
   ::placeholder {
     color: white;
-  }
-
-  input {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 10px;
-    width: 617px;
-    height: 50px;
-    background: #141d2f;
-    border: 1px solid #4b47ff;
-    border-radius: 10px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #ffffff;
-    cursor: pointer;
-
-    &:hover {
-      border: 1px solid #00bee8;
-    }
   }
 
   textarea {
@@ -113,6 +113,10 @@ form {
     flex-direction: column;
     position: relative;
   }
+}
+
+input:-internal-autofill-selected {
+  background-color: #141d2f !important;
 }
 
 .send-message-btn {
@@ -209,12 +213,34 @@ form {
   }
 }
 
-.checkbox {
-  min-width: 24px !important;
-  width: 24px !important;
-  accent-color: red !important;
-  border: #797ef3 1px solid !important;
-  filter: invert(100%);
+input[type="checkbox"] {
+  appearance: none;
+  align-items: center;
+  width: 27px !important;
+  height: 27px;
+  background-color: #141d2f;
+  border-radius: 4px;
+  border: 2.5px #5653ff solid;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  accent-color: #03cefc;
+}
+
+input[type="checkbox"]:checked {
+  appearance: auto;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #141d2f inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
 }
 
 .success-msg {
