@@ -1,12 +1,25 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { HomeComponent } from '../home/home.component';
 import {FormGroup, NgForm} from '@angular/forms';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-contact-section',
   templateUrl: './contact-section.component.html',
   styleUrls: ['./contact-section.component.scss'],
+  animations: [
+    trigger('fadeInOut', [
+      state('void', style({ opacity: 0 })),
+      transition(':enter', [
+        animate(300, style({ opacity: 1 })),
+      ]),
+      transition(':leave', [
+        animate(300, style({ opacity: 0 })),
+      ]),
+    ]),
+  ],
 })
+
 export class ContactSectionComponent extends HomeComponent {
   arrowSrc = 'assets/img/go-up-button.png';
   arrowSrcHover = 'assets/img/gp-up-button-blue.png';

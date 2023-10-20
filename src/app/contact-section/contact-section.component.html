@@ -34,7 +34,7 @@
         <img class="fail-img" src="assets/img/fail.png" [style.display]="message.invalid && (message.dirty || message.touched) ? 'block' : 'none'"/>
         <div *ngIf="message.invalid && (message.dirty || message.touched)" class="error-message">Message is required.</div>
       </label>
-      <div *ngIf="isSentSuccessfully" class="success-msg">Your Message was sent successfully!</div>
+      <div *ngIf="isSentSuccessfully" class="success-msg" [@fadeInOut]>Your Message was sent successfully!</div>
       <div class="checkbox-container">
         <input class="checkbox" type="checkbox" [(ngModel)]="agreeToPolicy" [ngModelOptions]="{standalone: true}"/>
         <p>I've read the <a [routerLink]="['/privacy-policy']">privacy policy</a> and agree to the processing of my data as outlined.</p>
