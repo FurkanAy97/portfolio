@@ -1,7 +1,7 @@
 <div class="header-container">
   <a class="name-title" href="">Furkan</a>
   
-  <div class="menu" *ngIf="!isMobileScreen">
+  <div class="menu" *ngIf="!isMobileScreen && isHomePage">
     <a (click)="handleAnchor('aboutMe')" class="menu-link">About me</a>
     <a (click)="handleAnchor('mySkills')" class="menu-link">Skills</a>
     <a (click)="handleAnchor('portfolio')" class="menu-link">Portfolio</a>
@@ -10,7 +10,7 @@
   <img
     src="assets/img/burger-menu.png"
     class="burger-menu-btn"
-    *ngIf="isMobileScreen && !burgerMenuVisible"
+    *ngIf="isMobileScreen && !burgerMenuVisible && isHomePage"
     (click)="toggleBurgerMenu()"
   />
   
