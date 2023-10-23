@@ -16,7 +16,7 @@ app-social-links {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 90px;
+  margin-top: -50px;
   gap: 42px;
 }
 
@@ -26,7 +26,7 @@ app-about-me {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 230px;
   padding: 0 100px;
 }
 
@@ -81,7 +81,6 @@ app-contact-section {
     flex-direction: column-reverse;
     padding: 0 25px;
     margin-top: 200px;
-    overflow-x: hidden;
   }
 }
 

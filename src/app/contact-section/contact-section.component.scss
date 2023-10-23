@@ -217,6 +217,7 @@ input[type="checkbox"] {
   appearance: none;
   align-items: center;
   width: 27px !important;
+  min-width: 27px;
   height: 27px;
   background-color: #141d2f;
   border-radius: 4px;

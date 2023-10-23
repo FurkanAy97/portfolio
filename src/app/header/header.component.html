@@ -1,5 +1,5 @@
 <div class="header-container">
-  <a class="name-title" href="">Furkan</a>
+  <a class="name-title" [routerLink]="['/']">Furkan</a>
   
   <div class="menu" *ngIf="!isMobileScreen && isHomePage">
     <a (click)="handleAnchor('aboutMe')" class="menu-link">About me</a>

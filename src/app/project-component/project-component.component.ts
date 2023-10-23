@@ -29,8 +29,8 @@ export class ProjectComponentComponent extends HomeComponent {
   ]
 
   grandParentLiveDemo: Array<string> = [
-    'https://furkan-ayhan.developerakademie.net/Join-Furkan/index.html',
-    'https://furkan-ayhan.developerakademie.net/Sharky/index.html',
+    'http://join.furkan-ayhan.de/',
+    'http://sharkie.furkan-ayhan.de/',
   ]
 
 
