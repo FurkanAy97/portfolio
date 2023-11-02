@@ -42,9 +42,9 @@
 
 .about-me-vector {
   position: absolute;
-  width: 545px;
+  width: 845px;
   height: 0px;
-  right: -300px;
+  right: -600px;
   z-index: 1;
   border: 3px solid #00bee8;
 }
@@ -59,7 +59,6 @@
   .about-me-text {
     width: 650px;
   }
-
 }
 @media (max-width: 1280px) {
   .portrait-container {
@@ -68,8 +67,8 @@
 
   .about-me-vector {
     width: 95px;
+    right: 0;
   }
-
 }
 @media (max-width: 1130px) {
   .portrait-container {
@@ -83,22 +82,20 @@
     z-index: 2;
     width: 100%;
 
-    h1{
+    h1 {
       font-size: 60px;
     }
   }
 
-  .subtext{
+  .subtext {
     width: 471px;
     padding: 50px 50px 0 0;
     gap: 50px;
   }
-
 }
 
 @media (max-width: 600px) {
-  .subtext{
+  .subtext {
     width: unset;
   }
-
 }
