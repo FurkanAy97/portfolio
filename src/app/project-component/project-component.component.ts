@@ -14,7 +14,7 @@ export class ProjectComponentComponent extends HomeComponent {
   ];
   projectTitle: Array<string> = ['Join', 'Sharkie', 'Simple CRM'];
   projectStack: Array<string> = [
-    'Angular | TypeScript | HTML | CSS | Firebase ',
+    'JavaScript | HTML | CSS',
     'JavaScript | HTML | CSS',
     'Angular | Firebase',
   ];
@@ -26,13 +26,13 @@ export class ProjectComponentComponent extends HomeComponent {
   grandParentGithubLink: Array<string> = [
     'https://github.com/FurkanAy97/JOIN-Project',
     'https://github.com/FurkanAy97/Sharky',
+    'https://github.com/FurkanAy97/simple-crm'
   ]
 
   grandParentLiveDemo: Array<string> = [
     'http://join.furkan-ayhan.de/',
     'http://sharkie.furkan-ayhan.de/',
+    'http://simple-crm.furkan-ayhan.de/#/'
   ]
-
-
 
 }
