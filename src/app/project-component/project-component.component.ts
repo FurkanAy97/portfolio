@@ -19,9 +19,9 @@ export class ProjectComponentComponent extends HomeComponent {
     'Angular | Firebase',
   ];
   projectDescription: Array<string> = [
-    'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-    'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
-    'A very Simple Customer Relationship Management system working with CRUD functionality.',
+    'Ein Task manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen und weisen Sie Benutzer und Kategorien zu.',
+    'Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Helfen Sie Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.',
+    'Ein simples Kundenbeziehungsmanagement-System, das mit CRUD-Funktionalität funktioniert.',
   ];
   grandParentGithubLink: Array<string> = [
     'https://github.com/FurkanAy97/JOIN-Project',

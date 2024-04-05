@@ -3,7 +3,7 @@
   class="skill-btn-mobile"
   (click)="handleAnchor('contactSection')"
 >
-  Get in touch
+  Kontaktieren Sie mich
 </button>
 <div class="skill-icons">
   <div *ngFor="let skill of skills; let i = index" class="skill-container">
@@ -12,13 +12,12 @@
   </div>
 </div>
 <div class="skill-text">
-  <h1>My Skills</h1>
+  <h1>Meine Skills</h1>
   <p>
-    My enhanced frontend development skills have enabled me to successfully
-    bring various real projects to life.
+    Durch meine Frontend-Entwicklungsfähigkeiten konnte ich erfolgreich verschiedene Projekte umsetzen.
   </p>
   <button *ngIf="!isMobileScreen" (click)="handleAnchor('contactSection')">
-    Get in touch
+    Kontaktieren Sie mich
   </button>
   <div class="skills-vector"></div>
 </div>
